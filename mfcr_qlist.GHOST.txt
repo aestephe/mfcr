@@ -1,0 +1,629 @@
+####################################################;
+####################################################;
+# START; ###########################################;
+# GHOST FILE; ######################################;
+
+note2-gate 0;
+dur-multiplier 1.;
+metro-multiplier 0.5;
+
+treset bang;
+note-transp -18.;
+clean-spigot 1. 0 0.5;
+clean-gain 0.;
+glitch-gain 0.;
+g1-spigot 0.;
+g2-spigot 0.;
+live-gain -0.;
+del 450;
+
+record-sf 1;
+
+# GROUP 1; #########################################;
+
+# GLITCH 1 = ~1/1;
+g1-shift 1.01;
+g1-fb 0.5;
+g1-amp 1.;
+g1-rep 0.6;
+g1-drop 0.2;
+g1-spigot 0.8 0 0.5;
+
+# GLITCH 2 OFF;
+g2-fb 0.5;
+g2-amp 1.;
+g2-rep 0.6;
+g2-drop 0.2;
+g2-spigot 0.;
+
+clean-gain 0.3;
+glitch-gain 0.;
+
+# A, G-;
+s1-gain 1.;
+s2-gain 1.;
+s4-gain 1.;
+s1-note1 57 384;
+s1-note2 62 510.72;
+s1-diapason 69.;
+s1-vel 100;
+s2-note1 55 336;
+s2-note2 60 436.8;
+s2-diapason 68.66;
+s2-vel 100;
+s4-note1 58 384;
+s4-note2 63 510.72;
+s4-diapason 68.01;
+s4-vel 100;
+del 30;
+
+s1-metros 1;
+s2-metros 1;
+del 30;
+
+# extra A;
+s4-metros 1;
+del 58352;
+
+# fade in Bb-- (slightly softer);
+s3-gain 1.;s3-note1 58 392;s3-note2 63 521.36;s3-diapason 68.33;s3-vel 90 19650;
+s3-metros 1;
+del 5240;
+# fade out extra A;
+s4-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in Ab---;
+s4-gain 1.;s4-note1 56 343;s4-note2 61 521.36;s4-diapason 68.01;s4-vel 100 19650;s4-metros 1;del 5240;
+# fade out A;
+s1-vel 0 19650;
+del 23936;
+
+# fade in Bb-;
+s1-note1 58 400.16;s1-note2 63 532.22;s1-diapason 68.66;s1-vel 100 19650;del 5240;
+# fade out G-;
+s2-vel 0 19650;
+del 23936;
+
+# fade in Ab--;
+s2-note1 56 350.14;s2-note2 61 466.85;s2-diapason 68.33;s2-vel 100 19650;del 5240;
+# fade out Bb--;
+s3-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in B---;
+s3-note1 59 408.50;s3-note2 64 544.66;s3-diapason 68.01;s3-vel 100 19650;del 5240;
+# fade out Ab---;
+s4-vel 0 19650;
+del 23936;
+
+# fade in Ab-;
+s4-note1 56 357.44;s4-note2 61 476.57;s4-diapason 68.66;s4-vel 100 19650;del 5240;
+# fade out Bb-;
+s1-vel 0 19650;
+del 23936;
+
+# fade in B--;
+s1-note1 59 417.01;s1-note2 64 556.00;s1-diapason 68.33;s1-vel 100 19650;del 5240;
+# fade out Ab--;
+s2-vel 0 19650;
+del 23936;
+
+# GROUP 2; #########################################;
+
+# fade in A---;
+s2-note1 57 364.88;s2-note2 62 486.50;s2-diapason 68.01;s2-vel 100 19650;
+# FADE IN GLITCH 2 = ~8/7;
+g2-shift 1.14;
+g2-spigot 0.8 19650 0.5;del 5240;
+# fade out B---;
+s3-vel 0 19650;
+# FADE OUT GLITCH 1;
+g1-spigot 0. 19650 0.5;
+del 23936;
+
+# fade in B-;
+s3-note1 59 425.69;s3-note2 64 567.58;s3-diapason 68.66;s3-vel 100 19650;del 5240;
+# fade out Ab-;
+s4-vel 0 19650;
+del 23936;
+
+# fade in A--;
+s4-note1 57 372.48;s4-note2 62 496.63;s4-diapason 68.33;s4-vel 100 19650;del 5240;
+# fade out B--;
+s1-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in C---;
+s1-note1 60 434.56;s1-note2 65 579.40;s1-diapason 68.01;s1-vel 100 19650;del 5240;
+# fade out A---;
+s2-vel 0 19650;
+del 23936;
+
+# fade in A-;
+s2-note1 57 380.24;s2-note2 62 506.97;s2-diapason 68.66;s2-vel 100 19650;del 5240;
+# fade out B-;
+s3-vel 0 19650;
+del 23936;
+
+# fade in C--;
+s3-note1 60 443.61;s3-note2 65 591.47;s3-diapason 68.33;s3-vel 100 19650;del 5240;
+# fade out A--;
+s4-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in Bb---;
+s4-note1 58 388.16;s4-note2 63 517.53;s4-diapason 68.01;s4-vel 100 19650;del 5240;
+# fade out C---;
+s1-vel 0 19650;
+del 23936;
+
+# fade in C-;
+s1-note1 60 452.85;s1-note2 65 603.79;s1-diapason 68.66;s1-vel 100 19650;del 5240;
+# fade out A-;
+s2-vel 0 19650;
+del 23936;
+
+# fade in Bb--;
+s2-note1 58 396.24;s2-note2 63 528.31;s2-diapason 68.33;s2-vel 100 19650;del 5240;
+# fade out C--;
+s3-vel 0 19650;
+del 23936;
+
+# GROUP 3; #########################################;
+
+# fade in Db---;
+s3-note1 61 462.28;s3-note2 66 616.36;s3-diapason 68.01;s3-vel 100 19650;
+# FADE IN GLITCH 1 = 7/6;
+g1-shift 1.1667;
+g1-spigot 0.8 19650 0.5;del 5240;
+# fade out Bb---;
+s4-vel 0 19650;
+# FADE OUT GLITCH 2;
+g2-spigot 0. 19650 0.5;
+del 23936;
+
+# fade in Bb-;
+s4-note1 58 404.50;s4-note2 63 539.31;s4-diapason 68.66;s4-vel 100 19650;del 5240;
+# fade out C-;
+s1-vel 0 19650;
+del 23936;
+
+# fade in Db--;
+s1-note1 61 471.92;s1-note2 66 629.21;s1-diapason 68.33;s1-vel 100 19650;del 5240;
+# fade out Bb--;
+s2-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in B---;
+s2-note1 59 412.93;s2-note2 64 550.56;s2-diapason 68.01;s2-vel 100 19650;del 5240;
+# fade out Db---;
+s3-vel 0 19650;
+del 23936;
+
+# fade in Db-;
+s3-note1 61 481.75;s3-note2 66 642.32;s3-diapason 68.66;s3-vel 100 19650;del 5240;
+# fade out Bb-;
+s4-vel 0 19650;
+del 23936;
+
+# fade in B--;
+s4-note1 59 421.53;s4-note2 64 562.03;s4-diapason 68.33;s4-vel 100 19650;del 5240;
+# fade out Db--;
+s1-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in D---;
+s1-note1 62 491.79;s1-note2 67 655.70;s1-diapason 68.01;s1-vel 100 19650;del 5240;
+# fade out B---;
+s2-vel 0 19650;
+del 23936;
+
+# fade in B-;
+s2-note1 59 430.32;s2-note2 64 573.74;s2-diapason 68.66;s2-vel 100 19650;del 5240;
+# fade out Db-;
+s3-vel 0 19650;
+del 23936;
+
+# fade in D--;
+s3-note1 62 502.04;s3-note2 67 669.37;s3-diapason 68.33;s3-vel 100 19650;del 5240;
+# fade out B--;
+s4-vel 0 19650;
+del 23936;
+
+# GROUP 4; #########################################;
+
+# fade in C---;
+s4-note1 60 439.29;s4-note2 65 585.70;s4-diapason 68.01;s4-vel 100 19650;
+# FADE IN GLITCH 2 = 6/5;
+g2-shift 1.2;
+g2-spigot 0.8 19650 0.5;del 5240;
+# fade out D---;
+s1-vel 0 19650;
+# FADE OUT GLITCH 1;
+g1-spigot 0. 19650 0.5;
+del 23936;
+
+# fade in D-;
+s1-note1 62 512.51;s1-note2 67 683.32;s1-diapason 68.66;s1-vel 100 19650;del 5240;
+# fade out B-;
+s2-vel 0 19650;
+del 23936;
+
+# fade in C--;
+s2-note1 60 448.45;s2-note2 65 597.91;s2-diapason 68.33;s2-vel 100 19650;del 5240;
+# fade out D--;
+s3-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in Eb---;
+s3-note1 63 523.19;s3-note2 68 697.57;s3-diapason 68.01;s3-vel 100 19650;del 5240;
+# fade out C---;
+s4-vel 0 19650;
+del 23936;
+
+# fade in C-;
+s4-note1 60 457.79;s4-note2 65 610.37;s4-diapason 68.66;s4-vel 100 19650;del 5240;
+# fade out D-;
+s1-vel 0 19650;
+del 23936;
+
+# fade in Eb--;
+s1-note1 63 534.09;s1-note2 68 712.10;s1-diapason 68.33;s1-vel 100 19650;del 5240;
+# fade out C--;
+s2-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in Db---;
+s2-note1 61 467.33;s2-note2 66 623.09;s2-diapason 68.01;s2-vel 100 19650;del 5240;
+# fade out Eb---;
+s3-vel 0 19650;
+del 23936;
+
+# fade in Eb-;
+s3-note1 63 545.22;s3-note2 68 726.94;s3-diapason 68.66;s3-vel 100 19650;del 5240;
+# fade out C-;
+s4-vel 0 19650;
+del 23936;
+
+# fade in Db--;
+s4-note1 61 477.07;s4-note2 66 636.07;s4-diapason 68.33;s4-vel 100 19650;del 5240;
+# fade out Eb--;
+s1-vel 0 19650;
+del 23936;
+
+# GROUP 5; #########################################;
+
+# fade in E---;
+s1-note1 64 556.58;s1-note2 69 742.08;s1-diapason 68.01;s1-vel 100 19650;
+# FADE IN GLITCH 1 = 5/4;
+g1-shift 1.25;
+g1-spigot 0.8 19650 0.5;del 5240;
+# fade out Db---;
+s2-vel 0 19650;
+# FADE OUT GLITCH 2;
+g2-spigot 0. 19650 0.5;
+del 23936;
+
+# fade in Db-;
+s2-note1 61 487.;s2-note2 66 649.32;s2-diapason 68.66;s2-vel 100 19650;del 5240;
+# fade out Eb-;
+s3-vel 0 19650;
+del 23936;
+
+# fade in E--;
+s3-note1 64 568.16;s3-note2 69 757.54;s3-diapason 68.33;s3-vel 100 19650;del 5240;
+# fade out Db--;
+s4-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in D---;
+s4-note1 62 497.14;s4-note2 67 662.84;s4-diapason 68.01;s4-vel 100 19650;del 5240;
+# fade out E---;
+s1-vel 0 19650;
+del 23936;
+
+# fade in E-;
+s1-note1 63 580.;s1-note2 68 773.31;s1-diapason 68.66;s1-vel 100 19650;del 5240;
+# fade out Db-;
+s2-vel 0 19650;
+del 23936;
+
+# fade in D--;
+s2-note1 62 507.5;s2-note2 67 676.65;s2-diapason 68.33;s2-vel 100 19650;del 5240;
+# fade out E--;
+s3-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in F---;
+s3-note1 65 592.08;s3-note2 70 789.42;s3-diapason 68.01;s3-vel 100 19650;del 5240;
+# fade out D---;
+s4-vel 0 19650;
+del 23936;
+
+# fade in D-;
+s4-note1 62 518.07;s4-note2 67 690.74;s4-diapason 68.66;s4-vel 100 19650;del 5240;
+# fade out E-;
+s1-vel 0 19650;
+del 23936;
+
+# fade in F--;
+s1-note1 65 604.42;s1-note2 70 805.87;s1-diapason 68.33;s1-vel 100 19650;del 5240;
+# fade out D--;
+s2-vel 0 19650;
+# GLITCH 1 INTENSIFY;
+g1-spigot 2. 19650 0.618;
+# CLEAN SPIGOT DOWN;
+clean-spigot 0.5 23936 0.618;
+del 23936;
+
+# GROUP 6; #########################################;
+
+# GLITCH 1 OFF;
+glitch-gain 0.;
+g1-spigot 0. 150 0.5;
+
+# fade in Eb---;
+s2-note1 63 528.87;s2-note2 68 705.14;s2-diapason 68.01;s2-vel 100 19650;
+del 5240;
+# fade out F---;
+s3-vel 0 19650;
+del 23936;
+
+# fade in F-;
+s3-note1 65 617.02;s3-note2 70 822.67;s3-diapason 68.66;s3-vel 100 19650;del 5240;
+# fade out D-;
+s4-vel 0 19650;
+del 23936;
+
+# fade in Eb--;
+s4-note1 63 539.89;s4-note2 68 719.84;s4-diapason 68.33;s4-vel 100 19650;del 5240;
+# fade out F--;
+s1-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in Gb---;
+s1-note1 66 629.87;s1-note2 71 839.81;s1-diapason 68.01;s1-vel 100 19650;del 5240;
+# fade out Eb---;
+s2-vel 0 19650;
+del 23936;
+
+# fade in Eb-;
+s2-note1 63 551.13;s2-note2 68 734.827;s2-diapason 68.66;s2-vel 100 19650;del 5240;
+# fade out F-;
+s3-vel 0 19650;
+del 23936;
+
+# fade in Gb--;
+s3-note1 66 642.99;s3-note2 71 857.29;s3-diapason 68.33;s3-vel 100 19650;del 5240;
+# fade out Eb--;
+s4-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in E---;
+s4-note1 64 562.62;s4-note2 69 750.14;s4-diapason 68.01;s4-vel 100 19650;del 5240;
+# fade out Gb---;
+s1-vel 0 19650;
+del 23936;
+
+# CLEAN SPIGOT UP;
+clean-spigot 1. 29176 0.382;
+
+# fade in Gb-;
+s1-note1 66 656.39;s1-note2 71 875.16;s1-diapason 68.66;s1-vel 100 19650;del 5240;
+# fade out Eb-;
+s2-vel 0 19650;
+del 23936;
+
+# GLITCH 1 ON = 5/4;
+glitch-gain 0.;
+g1-shift 1.25;
+g1-spigot 0.8 2500 0.5;
+
+# fade in E--;
+s2-note1 64 574.34;s2-note2 69 765.77;s2-diapason 68.33;s2-vel 100 19650;del 5240;
+# fade out Gb--;
+s3-vel 0 19650;
+del 23936;
+
+
+# GROUP 7; #########################################;
+
+# fade in G---;
+s3-note1 67 670.06;s3-note2 72 893.40;s3-diapason 68.01;s3-vel 100 19650;
+# FADE IN GLITCH 2 = 4/3;
+g2-shift 1.3333;
+g2-spigot 0.8 19650 0.5;del 5240;
+# fade out E---;
+s4-vel 0 19650;
+# FADE OUT GLITCH 1;
+g1-spigot 0. 19650 0.5;
+del 23936;
+
+# fade in E-;
+s4-note1 64 586.30;s4-note2 69 781.72;s4-diapason 68.66;s4-vel 100 19650;del 5240;
+# fade out Gb-;
+s1-vel 0 19650;
+del 23936;
+
+# fade in G--;
+s1-note1 67 684.02;s1-note2 72 912.00;s1-diapason 68.33;s1-vel 100 19650;del 5240;
+# fade out E--;
+s2-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in F---;
+s2-note1 65 598.52;s2-note2 70 798.00;s2-diapason 68.01;s2-vel 100 19650;del 5240;
+# fade out G---;
+s3-vel 0 19650;
+del 23936;
+
+# fade in G-;
+s3-note1 67 698.27;s3-note2 72 931.01;s3-diapason 68.66;s3-vel 100 19650;del 5240;
+# fade out E-;
+s4-vel 0 19650;
+del 23936;
+
+# fade in F--;
+s4-note1 65 610.99;s4-note2 70 814.63;s4-diapason 68.33;s4-vel 100 19650;del 5240;
+# fade out G--;
+s1-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in Ab---;
+s1-note1 68 712.82;s1-note2 73 950.41;s1-diapason 68.01;s1-vel 100 19650;del 5240;
+# fade out F---;
+s2-vel 0 19650;
+del 23936;
+
+# fade in F-;
+s2-note1 65 623.71;s2-note2 70 831.60;s2-diapason 68.66;s2-vel 100 19650;del 5240;
+# fade out G-;
+s3-vel 0 19650;
+del 23936;
+
+# fade in Ab--;
+s3-note1 68 727.66;s3-note2 70 970.19;s3-diapason 68.33;s3-vel 100 19650;del 5240;
+# fade out F--;
+s4-vel 0 19650;
+del 23936;
+
+# GROUP 8; #########################################;
+
+# fade in F---;
+s4-note1 65 636.70;s4-note2 70 848.92;s4-diapason 68.01;s4-vel 100 19650;
+# FADE IN GLITCH 1 = 3/2;
+g1-shift 1.5;
+g1-spigot 0.8 19650 0.5;del 5240;
+# fade out Ab---;
+s1-vel 0 19650;
+# FADE OUT GLITCH 2;
+g2-spigot 0. 19650 0.5;
+del 23936;
+
+# fade in Ab-;
+s1-note1 68 742.82;s1-note2 73 990.40;s1-diapason 68.66;s1-vel 100 19650;del 5240;
+# fade out F-;
+s2-vel 0 19650;
+del 23936;
+
+# fade in Gb--;
+s2-note1 66 649.97;s2-note2 71 866.60;s2-diapason 68.33;s2-vel 100 19650;del 5240;
+# fade out Ab--;
+s3-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in A---;
+s3-note1 69 758.30;s3-note2 74 1011.04;s3-diapason 68.01;s3-vel 100 19650;del 5240;
+# fade out Gb---;
+s4-vel 0 19650;
+del 23936;
+
+# fade in Gb-;
+s4-note1 66 663.51;s4-note2 71 884.66;s4-diapason 68.66;s4-vel 100 19650;del 5240;
+# fade out Ab-;
+s1-vel 0 19650;
+del 23936;
+
+# fade in A--;
+s1-note1 69 774.10;s1-note2 74 1032.10;s1-diapason 68.33;s1-vel 100 19650;del 5240;
+# fade out Gb--;
+s2-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+# fade in G---;
+s2-note1 67 677.34;s2-note2 72 903.10;s2-diapason 68.01;s2-vel 100 19650;del 5240;
+# fade out A---;
+s3-vel 0 19650;
+del 23936;
+
+# fade in A-;
+s3-note1 69 790.23;s3-note2 74 1053.61;s3-diapason 68.66;s3-vel 100 19650;del 5240;
+# fade out Gb-;
+s4-vel 0 19650;
+del 23936;
+
+# fade in G--;
+s4-note1 67 691.45;s4-note2 72 921.91;s4-diapason 68.33;s4-vel 100 19650;del 5240;
+# fade out A--;
+s1-vel 0 19650;
+del 23936;
+
+# GROUP 9; #########################################;
+
+# fade in Bb---;
+s1-note1 70 806.69;s1-note2 75 1075.56;s1-diapason 68.01;s1-vel 100 19650;
+# FADE IN GLITCH 2 = 2/1 (slightly softer);
+g2-shift 2.;
+g2-spigot 0.35 19650 0.5;del 5240;
+# fade out A---;
+s2-vel 0 19650;
+# FADE OUT GLITCH 1;
+g1-spigot 0. 19650 0.5;
+del 23936;
+
+# fade in G-;
+s2-note1 67 705.84;s2-note2 72 941.09;s2-diapason 68.66;s2-vel 100 19650;del 5240;
+# fade out A-;
+s3-vel 0 19650;
+del 23936;
+
+# fade in extra A;
+s3-note1 69 806.69;s3-note2 74 1075.56;s3-diapason 69.;s3-vel 100 19650;del 5240;
+# fade out G--;
+s4-vel 0 19650;
+del 23936;
+
+# ---------------------------------------------------;
+
+del 58352;
+
+# GLITCH 2 OFF;
+#g2-spigot 0. 1000 0.3;
+glitch-gain 0.;
+g2-spigot 0. 150 0.5;
+
+del 29176;
+
+# METROS OFF;
+s1-metros 0;
+s2-metros 0;
+s3-metros 0;
+s4-metros 0;
+
+del 30000;
+record-sf 0;
+
+# EOF;

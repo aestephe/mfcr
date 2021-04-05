@@ -38,6 +38,7 @@ g2-spigot 0.;
 
 clean-gain 0.75;
 glitch-gain 0.925;
+spat-go bang;
 
 # A, G-;
 s1-gain 1.;
